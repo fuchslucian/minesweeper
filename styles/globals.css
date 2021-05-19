@@ -1,16 +1,65 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
+.board{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 1px;
+  display: grid
 }
-
-* {
-  box-sizing: border-box;
+.cell{
+  display: flex;
+  border: solid grey 0.1px;
+  width: 100%;
+  height: 100%;
+}
+._covered{
+  background-image: url(../public/covered.svg);
+  background-size: cover
+}
+._flagged{
+  background-image: url(../public/flag.svg);
+  background-size: cover
+}
+._bomb{
+  background-image: url(../public/bomb.svg);
+  background-size: cover
+}
+._redbomb{
+  background-image: url(../public/redbomb.svg);
+  background-size: cover
+}
+._0{
+  background-color: grey;
+}
+._1{
+  background-image: url(../public/1.svg);
+  background-size: cover
+}
+._2{
+  background-image: url(../public/2.svg);
+  background-size: cover
+}
+._3{
+  background-image: url(../public/3.svg);
+  background-size: cover
+}
+._4{
+  background-image: url(../public/4.svg);
+  background-size: cover
+}
+._5{
+  background-image: url(../public/5.svg);
+  background-size: cover
+}
+._6{
+  background-image: url(../public/6.svg);
+  background-size: cover
+}
+._7{
+  background-image: url(../public/7.svg);
+  background-size: cover
+}
+._8{
+  background-image: url(../public/8.svg);
+  background-size: cover
 }
