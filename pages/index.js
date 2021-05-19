@@ -17,7 +17,6 @@ const getSorroundedBombs = (board, i, y) => {
   }
   return surrounded
 }
-// Celle in Board soll so aussehen {status: clicked, notclicked or flagged, bomb: true or false, surroundings: 0-8}
 export const getStaticProps = async () => {
   let board = []
   let width = 20
@@ -323,9 +322,6 @@ export default function Minesweeper(props) {
 }
 
 const Cell = (props) => {
-  //props = status, bomb, surroundings, i, y
-  //console.log(props.i,props.y)
-  //{status: clicked, covered or flagged, bomb: true or false, surroundings: 1-8}
 
   if (props.status === "clicked"){
     if (props.bomb){
@@ -354,19 +350,3 @@ const Cell = (props) => {
     </div>
   )
 }
-
-/*
-<div>
-        <fieldset>
-            <legend>Height</legend>
-            <input value={newHeight} onChange={(e)=>{handleHeightChange(e.target.value)}}/>
-        </fieldset>
-        <fieldset>
-          <legend>Width</legend>
-              <input value={newWidth} onChange={(e)=>{handleWidthChange(e.target.value)}}/>
-        </fieldset>
-        <fieldset>
-          <legend>Bombs</legend>
-              <input value={newBombs} onChange={(e)=>{handleBombsChange(e.target.value)}}/>
-        </fieldset>
-      </div> */
